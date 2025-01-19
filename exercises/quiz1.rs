@@ -13,10 +13,13 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(count: u8) -> u8 {
+    match count {
+        c if c <= 40 => c * 2,
+        c => c,
+    }
+}
 
 // Don't modify this function!
 #[test]
